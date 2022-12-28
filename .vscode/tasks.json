@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "JavaCompile",
+			"type": "shell",
+			"command": "${workspaceFolder}/.vscode/compile.bat",
+			"args": [
+				// Workspace
+				"${workspaceFolder}",
+				// Path to jre8 javac
+				"C:/Program Files/Eclipse Adoptium/jdk-8.0.352.8-hotspot/bin/javac.exe"
+			],
+			"problemMatcher": []
+		}, {
+			"label": "JavaBuildJar",
+			"type": "shell",
+			"command": "${workspaceFolder}/.vscode/buildJar.bat",
+			"args": [
+				// Workspace
+				"${workspaceFolder}",
+				// Main class name
+				"App"
+			],
+			"problemMatcher": []
+		}, {
+			"label": "StartJar",
+			"type": "shell",
+			"command": "${workspaceFolder}/Output.jar",
+			"problemMatcher": []
+		}, {
+			"label": "CleanBin",
+			"type": "shell",
+			"command": "powershell Remove-Item ${workspaceFolder}/bin -Recurse",
+			"problemMatcher": []
+		}, {
+			"label": "ExecuteBuildPipline",
+			"type": "shell",
+			"dependsOrder": "sequence",
+			"dependsOn": ["JavaCompile", "JavaBuildJar", "CleanBin", "StartJar"],
+			"problemMatcher": []
+		}
+	]
+}
