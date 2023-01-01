@@ -1,7 +1,29 @@
 {
-    "java.project.sourcePaths": ["src"],
+    // Defines a default formatter which takes precedence over all other formatter settings. 
+    // Must be the identifier of an extension contributing a formatter.
+    "editor.defaultFormatter": null,
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.format.enabled": true,
+    // "java.format.settings.profile": "myStyle",
+    
+    // Google Style-guide
+    // "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    // Local format sadly doesnt work --> url only 
+    // "java.format.settings.url": "~/.vscode/my_formatter_style.xml",
+    // pastebin url
+    "java.format.settings.url": "https://pastebin.com/raw/iWkqb5vC",
+
+
+
+    // settings.json overrides local settings (everything can be changed)
+    "workbench.colorCustomizations": {
+        "editor.background": "#1e1e1e",
+        "editor.selectionHighlightBackground": "#add6ff26",
+    }
 }
