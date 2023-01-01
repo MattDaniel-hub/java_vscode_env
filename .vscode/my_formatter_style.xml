@@ -1,6 +1,3 @@
-<!-- is not used -> is not to be found in settings... bug? -->
-<!-- instead git url for this file is used -->
-
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <profiles version="13">
 <profile kind="CodeFormatterProfile" name="GoogleStyle" version="13">
