@@ -10,16 +10,16 @@
         "lib/**/*.jar"
     ],
     "java.format.enabled": true,
-    // "java.format.settings.profile": "myStyle",
+    "java.format.settings.profile": "GoogleStyle",
     
     // Google Style-guide
     // "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
     // Local format sadly doesnt work --> url only 
     // "java.format.settings.url": "~/.vscode/my_formatter_style.xml",
     // pastebin url
-    "java.format.settings.url": "https://pastebin.com/raw/iWkqb5vC",
-    // git url
-    // "java.format.settings.url": "https://raw.githubusercontent.com/MattDaniel-hub/vscode_java_buildpipeline/main/.vscode/my_formatter_style.xml",
+    // "java.format.settings.url": "https://pastebin.com/raw/iWkqb5vC",
+    // git url - raw takes a while to update on git server
+    "java.format.settings.url": "https://raw.githubusercontent.com/MattDaniel-hub/vscode_java_buildpipeline/main/.vscode/my_formatter_style.xml",
 
 
 
